@@ -1,1 +1,3 @@
-# DrumComputerJavaScript
+Javascript Drum Kit.
+Play Along!
+TP
