@@ -30,3 +30,4 @@ function playByMouse(e)
 	const key = document.querySelector(`.key[data-key="${keyCode}"]`);
     key.classList.add('playing');
 }
+//reviewed by Timothy Hsu
