@@ -1,0 +1,82 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Aldrich");
+html,
+body {
+  background-image: url(../images/drummerFF.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  font-family: "Aldrich";
+  text-align: center;
+  color: rgb(251, 255, 7);
+  font-size: 85px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 175px;
+  padding-bottom: 25px;
+}
+.note{
+  font-family: "Aldrich";
+    color: whitesmoke;
+    font-size: 45px;
+    text-transform: uppercase;
+    animation: animate 5.0s linear infinite;
+  } 
+   
+  @keyframes animate{
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 0.8;
+    }
+    100%{
+      opacity: 1;
+    }
+}
+.keys {
+  width: 1600px;
+  margin: auto;
+  text-align: center;
+  margin-top: 175px;
+}
+
+.key {
+  font-family: "Aldrich";
+  color: rgba(255, 255, 255, 0.644);
+  background: rgba(10, 0, 0, 0.5);
+  font-size: 20px;
+  margin: 8px;
+  text-align: center;
+  display: inline-block;
+  width: 150px;
+  padding: 80px 0;
+  border-radius: 45px;
+  transition: all .2s;
+  cursor: grabbing;
+}
+.key kbd {
+  font-family: "Aldrich";
+  color: rgb(253, 1, 1);
+  font-size: 150px;
+  display: block;
+}
+.key .sound {
+  text-transform: capitalize;
+}
+
+.playing {
+  border: 5px solid #F5DA55;
+  -webkit-box-shadow: 0 0 20px #F5DA55;
+          box-shadow: 0 0 20px #F5DA55;
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
+  transform: scale(2);
+}
